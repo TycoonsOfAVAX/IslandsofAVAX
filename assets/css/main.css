@@ -2416,6 +2416,11 @@ input, select, textarea {
 				color: #fff;
 			}
 
+			#nav li.current2 a {
+				background: #ddabab;
+				color: #fff;
+			}
+
 	.dropotron {
 		list-style: none;
 		background: #6B7770;
