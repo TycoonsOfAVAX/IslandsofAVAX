@@ -2536,7 +2536,7 @@ input, select, textarea {
 				border-color: #616763;
 			}
 
-/* Banner */
+/* Banner Bridge */
 
 	#banner {
 		position: relative;
@@ -2602,6 +2602,15 @@ input, select, textarea {
 
 	#main {
 		background: #fff;
+		border-top: solid 5px #b1ddab;
+		border-bottom: solid 5px #c1cac5;
+		border-top-width: 35px;
+		border-bottom-width: 10px;
+		padding: 6em 0 6em 0;
+	}
+
+	#main2 {
+		background: rgb(223, 223, 223);
 		border-top: solid 5px #b1ddab;
 		border-bottom: solid 5px #c1cac5;
 		border-top-width: 35px;
