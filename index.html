@@ -60,10 +60,44 @@
 				<section id="banner2">
 					<div class="content">
 						<h2>The Islands of AVAX</h2>
-						<p>An original NFT collection of 2000 NFT islands with utility in a Play 2 Earn game.</p>
+						<p>An original handmade NFT collection of 2000 NFT islands with utility in a Play 2 Earn game.</p>
 						<p>Powered by the Avalanche (AVAX) Blockchain and sold exclusively on NFtrade</p>
 						<ul>
-							<li class="button scrolly">Launching Mid October</li>
+							<p>400 Genesis islands releasing</p> 
+							<a href="https://app.nftrade.com/users/avalanche/0x8d489aa72ad34257ecd8ff7989bed1175239088f" class="button scrolly">October 15, 2021 3PM EST</a>
+							<p id="timer"></p>
+							
+						<script>
+						// Set the date we're counting down to
+						var countDownDate = new Date("Oct 15, 2021 12:00:00").getTime();
+
+						// Update the count down every 1 second
+						var x = setInterval(function() {
+
+						// Get today's date and time
+						var now = new Date().getTime();
+							
+						// Find the distance between now and the count down date
+						var distance = countDownDate - now;
+							
+						// Time calculations for days, hours, minutes and seconds
+						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+							
+						// Output the result in an element with id="timer"
+						document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+						+ minutes + "m " + seconds + "s ";
+							
+						// If the count down is over, write some text 
+						if (distance < 0) {
+							clearInterval(x);
+							document.getElementById("timer").innerHTML = "EXPIRED";
+						}
+						}, 1000);
+						</script>
+
 						</ul>
 					</div>
 				</section>
@@ -85,7 +119,7 @@
 										<ul>
 											<li class="button alt scrolly">Avalanche C-Chain</li>
 											<li class="button scrolly">2000 NFTs in collection</li>
-											<li class="button alt scrolly">Presale price 1 AVAX per resource island NFT</li>
+											<li class="button alt scrolly">Released in 5 isLAND SALE events</li>
 										</ul>	
 										<header>
 											<h2>About the Islands of AVAX</h2>
@@ -201,7 +235,7 @@
 						</p>
 						<h3>NFT Launch</h3>
 						<p>
-							Islands will be pre-minted and released to the public in batches of 100 on NFTrade (Lands Rush Events). Prices starting at 1 AVAX each and are claimed on a first come first serve basis. 
+							Islands will be pre-minted and released to the public in batches of 100 on NFTrade (isLAND RUSH Events). Prices starting at 1 AVAX each and are claimed on a first come first serve basis. 
 							All islands are listed under specific district and regions, 5% of island sales proceeds will go to the District Governors as district tax. 
 							A portion of the presale proceeds will be put into an interest yielding platform (eg. AAVE/CRV etc...) to generate monthly allowance to pay out in game rewards (directed by the DAO).											 
 						</p> 
@@ -213,7 +247,7 @@
 						</p>
 						<h3>Play to Earn game</h3>
 						<p>Advanced mechanics are included piece by piece as the simulation becomes a play to earn game. 
-							Features includes: Resource commodities trading, food, tariffs, population management, staking, bridges & tolling, manufacturing plants (Turns resources into NFTs), district policies, invasions & wars, district powerups and more to come. 
+							Features include: Resource commodities trading, food, tariffs, population management, staking, bridges & tolling, manufacturing plants (Turns resources into NFTs), district policies, invasions & wars, district powerups and more to come. 
 						</p>
 						<h3>Game Governance & DAO</h3>
 						<p>
